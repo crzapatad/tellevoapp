@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'inicio',
     loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
   },
+  {
+    path: '**',
+    loadChildren: () => import('./pag-error/pag-error.module').then( m => m.PagErrorPageModule)
+  },
 ];
 
 @NgModule({

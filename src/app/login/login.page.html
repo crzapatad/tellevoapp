@@ -1,5 +1,5 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Lobster&display=swap" rel="stylesheet">
 
 <ion-header [translucent]="true">
@@ -17,22 +17,22 @@
 
 <ion-list>
   <ion-text color="primary">
-    <h1>Inicia sesión</h1>
+    <h1 class="mensajes">Inicia sesión</h1>
   </ion-text>
   <ion-list>
     <ion-item>
-      <ion-input label="Email input" type="email" placeholder="email@domain.com"></ion-input>
+      <ion-input class="mensajes" label="Email input" type="email" placeholder="email@domain.com"></ion-input>
     </ion-item>
 
-    
+
     <ion-item>
-      <ion-input label="Password input" type="password" value="password"></ion-input>
+      <ion-input class="mensajes" label="Password input" type="password" value="password"></ion-input>
     </ion-item>
 
-    <ion-button  size="default" routerLink="/inicio">Iniciar sesion</ion-button>
+    <ion-button id="sesion" size="default" routerLink="/inicio">Iniciar sesion</ion-button>
 
     <ion-text>
-      <a routerLink="/registro">¿Aún no tienes una cuenta?</a>
+      <a id="no_hay_cuenta" routerLink="/registro">¿Aún no tienes una cuenta?</a>
     </ion-text>
 
   </ion-list>
